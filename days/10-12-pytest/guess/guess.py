@@ -28,18 +28,18 @@ class Game:
            If all good, return the int"""
         guess = input(f'Guess a number between {START} and {END}: ')
         if not guess:
-            raise ValueError('Please enter a number')
+            raise ValueError('Gimme a number:')
 
         try:
             guess = int(guess)
         except ValueError:
-            raise ValueError('Should be a number')
+            raise ValueError('Enter a fucking number')
 
         if guess not in range(START, END+1):
-            raise ValueError('Number not in range')
+            raise ValueError("What don't you understand abou 1 to 20?")
 
         if guess in self._guesses:
-            raise ValueError('Already guessed')
+            raise ValueError('Already did that dumbass!')
 
         self._guesses.add(guess)
         return guess
