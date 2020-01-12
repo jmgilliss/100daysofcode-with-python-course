@@ -36,7 +36,7 @@ class Game:
             raise ValueError('Enter a fucking number')
 
         if guess not in range(START, END+1):
-            raise ValueError("What don't you understand abou 1 to 20?")
+            raise ValueError("What don't you understand about 1 to 20?")
 
         if guess in self._guesses:
             raise ValueError('Already did that dumbass!')

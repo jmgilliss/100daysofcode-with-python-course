@@ -65,8 +65,8 @@ def test_game_win(inp, capfd):
     assert game._win is True
 
     out = capfd.readouterr()[0]
-    expected = ['4 is too low', 'Number not in range',
-                '9 is too high', 'Already guessed',
+    expected = ['4 is too low', "What don't you understand about 1 to 20?",
+                '9 is too high', 'Already did that dumbass!',
                 '6 is correct!', 'It took you 3 guesses']
 
     output = [line.strip() for line
